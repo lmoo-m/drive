@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+nav{
+    background: #E4DCCF;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, .7);
+}
+
+nav div{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div a{
+    cursor: pointer;
+    transition: .5s;
+    color: black;
+    text-decoration: none;
+}
+
+nav div a:hover{
+    background: rgba(249, 245, 235, .8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.login-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.login-page .form{
+    background-color: rgba(25, 167, 206, .8);
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
+}
+
+.login-page h4{
+    color: white;
+}
+
+.login-page .form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page .form form div{
+    display: flex;
+    margin: 10px 0 0 0 ;
+    justify-content: space-between;
+}
+
+.login-page .form form .input{
+    margin: .5rem 0;
+}
+
+.input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn-primary{
+    background-color: #F6F1F1;
+}
+
+.btn-secondary{
+    background-color: #413543;
+    color: white;
+}
+
+.btn:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
+}
+
+.dashboard{
+    margin-top: 1rem;
+    padding: 0 1.2rem;
+}
+
+.tool{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: end;
+}
+
+.tool span{
+    background-color: #19A7CE;
+    padding: 1.2rem;
+    border-radius: 50%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .7);
+
+}
+
+.tool span i{
+    color: white;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+}
+
+.card{
+    width: 100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .7);
+    border: .5px solid black;
+    border-radius: 5px;
+    height: 10rem;
+    margin: 2rem 0;
+}
+
+.card .img{
+    height: 60%;
+    border-bottom: 1px solid black;
+}
+
+.card .desc{
+    padding: 3px;
+}
+
+.card .desc p{
+    margin-top: 10px;
+}
+
+.upload{
+    background-color:rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload form{
+    background-color: #19A7CE;
+    border-radius: 5px;
+    height: 27%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.upload form input{
+    background-color: #F6F1F1;
+    border-collapse: collapse;
+    border-radius: 5px;
+    height: 2.3rem;
+    padding: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.upload form a{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+}
+
+.upload form a span{
+    background-color: #F6F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.profile-r{
+    border: 1px solid black;
+}
+
+@media (min-width: 768px) {
+    nav div{
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .card{
+        width: 40%;
+        margin: 1rem;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .login-page .form{
+        background-color: rgba(25, 167, 206, .8);
+        padding: 1.5rem;
+        transform: scale(1.3);
+        width: 30%;
+        border-radius: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .7);
+    }
+}
